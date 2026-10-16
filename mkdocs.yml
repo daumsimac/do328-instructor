@@ -1,0 +1,53 @@
+
+site_name: DO328 Instructor Notes
+site_description: Red Hat DO328 Instructor Handbook
+site_author: DO328 Instructor
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드
+
+nav:
+  - Home: index.md
+  - Instructor Notes:
+      - Microservice Challenges: chapters/01-microservice-challenges.md
+  - Quick Notes:
+      - Service Discovery: quick-notes/service-discovery.md
+  - Labs:
+      - Service Discovery Lab: labs/service-discovery.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
